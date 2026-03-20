@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquire with Ferdie Nervida | Speaking, Training, and Investigative Support</title>
+    <meta name="description" content="Send a speaking, training, or crypto recovery inquiry to Ferdie Nervida. Share your needs and receive a tailored next step.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-panel">
+                <p class="eyebrow">Inquiry Form</p>
+                <h1>Speaking, training, and investigative support inquiries.</h1>
+                <p class="hero-copy">
+                    Tell us what you need help with and we will review the request before recommending the right next step.
+                    This form is designed for keynote invitations, organizational training, and crypto recovery or investigative support.
+                </p>
+                <div class="hero-pills">
+                    <span class="pill">Keynote Speaking</span>
+                    <span class="pill">Cybersecurity Training</span>
+                    <span class="pill">Blockchain Forensics</span>
+                    <span class="pill">Crypto Recovery</span>
+                </div>
+                <div class="hero-note">
+                    <strong>Recent engagements:</strong> TEDx, DICT, TESDA, Davao Chamber Innovation Summit, and public sector cybersecurity programs.
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="intro-grid">
+                <article class="info-card">
+                    <h2>How this works</h2>
+                    <ol class="info-list">
+                        <li>Select the type of help you need.</li>
+                        <li>Share the context so we can assess fit and scope.</li>
+                        <li>We review the inquiry and follow up with next steps.</li>
+                    </ol>
+                </article>
+                <article class="info-card">
+                    <h2>Best use cases</h2>
+                    <ul class="info-list">
+                        <li>Conference and institutional speaking invitations</li>
+                        <li>Cybersecurity or blockchain forensics training</li>
+                        <li>Crypto recovery case evaluation</li>
+                        <li>General inquiries related to services and availability</li>
+                    </ul>
+                </article>
+            </section>
+
+            <form id="inquiryForm" class="inquiry-form" action="https://formsubmit.co/ajax/contact@ferdienervida.com" method="POST">
+                <input type="hidden" name="_subject" id="subjectField" value="New Inquiry for Ferdie Nervida">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Thank you for your inquiry. We have received your submission and will review it before getting back to you with the appropriate next step.">
+
+                <section class="form-section">
+                    <div class="section-heading">
+                        <p class="section-kicker">Step 1</p>
+                        <h2>What do you need help with?</h2>
+                    </div>
+                    <div class="service-grid">
+                        <label class="service-option">
+                            <input type="radio" name="service_type" value="Speaking Inquiry" required>
+                            <span class="service-card">
+                                <strong>Speaking</strong>
+                                <span>Keynotes, executive briefings, panels, and institutional talks.</span>
+                            </span>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="service_type" value="Training Inquiry" required>
+                            <span class="service-card">
+                                <strong>Training</strong>
+                                <span>Cybersecurity, blockchain literacy, and forensics-focused capacity building.</span>
+                            </span>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="service_type" value="Crypto Recovery Case Evaluation" required>
+                            <span class="service-card">
+                                <strong>Crypto Recovery</strong>
+                                <span>Early case evaluation for incidents involving digital assets.</span>
+                            </span>
+                        </label>
+                        <label class="service-option">
+                            <input type="radio" name="service_type" value="General Inquiry" required>
+                            <span class="service-card">
+                                <strong>General Inquiry</strong>
+                                <span>Questions about services, fit, availability, or collaboration.</span>
+                            </span>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <div class="section-heading">
+                        <p class="section-kicker">Step 2</p>
+                        <h2>Your details</h2>
+                    </div>
+                    <div class="form-grid two-col">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="full_name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone / Viber</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="role">Role / Position</label>
+                            <input type="text" id="role" name="role" autocomplete="organization-title">
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">Organization / Institution</label>
+                            <input type="text" id="organization" name="organization" autocomplete="organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="orgType">Organization Type</label>
+                            <select id="orgType" name="organization_type">
+                                <option value="">Select an option</option>
+                                <option value="Government">Government</option>
+                                <option value="Private Company">Private Company</option>
+                                <option value="School or University">School or University</option>
+                                <option value="NGO or Nonprofit">NGO or Nonprofit</option>
+                                <option value="Student Organization">Student Organization</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-section conditional-section" data-group="Speaking Inquiry" hidden>
+                    <div class="section-heading">
+                        <p class="section-kicker">Speaking</p>
+                        <h2>Event details</h2>
+                    </div>
+                    <div class="form-grid two-col">
+                        <div class="form-group">
+                            <label for="eventTitle">Event Title or Theme</label>
+                            <input type="text" id="eventTitle" name="event_title">
+                        </div>
+                        <div class="form-group">
+                            <label for="eventDate">Target Date</label>
+                            <input type="date" id="eventDate" name="event_date">
+                        </div>
+                        <div class="form-group">
+                            <label for="eventLocation">Location / Venue</label>
+                            <input type="text" id="eventLocation" name="event_location">
+                        </div>
+                        <div class="form-group">
+                            <label for="audienceType">Audience Type</label>
+                            <input type="text" id="audienceType" name="audience_type" placeholder="Executives, students, technical staff, public sector teams">
+                        </div>
+                        <div class="form-group">
+                            <label for="attendees">Estimated Number of Attendees</label>
+                            <input type="number" id="attendees" name="attendees" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">Preferred Talk Length</label>
+                            <input type="text" id="duration" name="speaking_duration" placeholder="e.g. 45 minutes plus Q&A">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="speakingBrief">What would you like the session to cover?</label>
+                        <textarea id="speakingBrief" name="speaking_brief" rows="4" placeholder="Share the topic, audience context, and the outcome you want from the talk."></textarea>
+                    </div>
+                </section>
+
+                <section class="form-section conditional-section" data-group="Training Inquiry" hidden>
+                    <div class="section-heading">
+                        <p class="section-kicker">Training</p>
+                        <h2>Training context</h2>
+                    </div>
+                    <div class="form-grid two-col">
+                        <div class="form-group">
+                            <label for="trainingTopic">Training Topic or Area of Focus</label>
+                            <input type="text" id="trainingTopic" name="training_topic" placeholder="Cybersecurity awareness, blockchain forensics, crypto literacy">
+                        </div>
+                        <div class="form-group">
+                            <label for="trainingFormat">Preferred Format</label>
+                            <select id="trainingFormat" name="training_format">
+                                <option value="">Select an option</option>
+                                <option value="In person">In person</option>
+                                <option value="Online">Online</option>
+                                <option value="Hybrid">Hybrid</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="participantProfile">Target Participants</label>
+                            <input type="text" id="participantProfile" name="participant_profile" placeholder="Investigators, executives, staff, students">
+                        </div>
+                        <div class="form-group">
+                            <label for="participantCount">Estimated Number of Participants</label>
+                            <input type="number" id="participantCount" name="participant_count" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="trainingDate">Target Date</label>
+                            <input type="date" id="trainingDate" name="training_date">
+                        </div>
+                        <div class="form-group">
+                            <label for="trainingLocation">Location / Delivery Setup</label>
+                            <input type="text" id="trainingLocation" name="training_location" placeholder="City, venue, or online setup">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="trainingGoals">What should the training accomplish?</label>
+                        <textarea id="trainingGoals" name="training_goals" rows="4" placeholder="Describe the capabilities, topics, or practical outcomes your team needs."></textarea>
+                    </div>
+                </section>
+
+                <section class="form-section conditional-section" data-group="Crypto Recovery Case Evaluation" hidden>
+                    <div class="section-heading">
+                        <p class="section-kicker">Recovery</p>
+                        <h2>Case details</h2>
+                    </div>
+                    <div class="form-grid two-col">
+                        <div class="form-group">
+                            <label for="assetType">Asset or Network Involved</label>
+                            <input type="text" id="assetType" name="asset_type" placeholder="BTC, ETH, USDT, exchange account, wallet">
+                        </div>
+                        <div class="form-group">
+                            <label for="incidentDate">When did the incident happen?</label>
+                            <input type="date" id="incidentDate" name="incident_date">
+                        </div>
+                        <div class="form-group">
+                            <label for="estimatedLoss">Approximate Amount Impacted</label>
+                            <input type="text" id="estimatedLoss" name="estimated_loss" placeholder="Optional">
+                        </div>
+                        <div class="form-group">
+                            <label for="jurisdiction">Location / Jurisdiction</label>
+                            <input type="text" id="jurisdiction" name="jurisdiction" placeholder="Country, city, or reporting agency if relevant">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="incidentSummary">What happened?</label>
+                        <textarea id="incidentSummary" name="incident_summary" rows="4" placeholder="Describe the incident, the wallet or platform involved, and the help you are seeking."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="evidenceLinks">Relevant wallet addresses, transaction hashes, or supporting links</label>
+                        <textarea id="evidenceLinks" name="evidence_links" rows="3" placeholder="Optional. Include only information you are comfortable sharing at this stage."></textarea>
+                    </div>
+                </section>
+
+                <section class="form-section conditional-section" data-group="General Inquiry" hidden>
+                    <div class="section-heading">
+                        <p class="section-kicker">General</p>
+                        <h2>Tell us more</h2>
+                    </div>
+                    <div class="form-group">
+                        <label for="generalMessage">How can we help?</label>
+                        <textarea id="generalMessage" name="general_message" rows="5" placeholder="Share your inquiry, collaboration idea, or service question."></textarea>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <div class="section-heading">
+                        <p class="section-kicker">Final</p>
+                        <h2>Anything else we should know?</h2>
+                    </div>
+                    <div class="form-group">
+                        <label for="additionalContext">Additional context</label>
+                        <textarea id="additionalContext" name="additional_context" rows="4" placeholder="Optional details that would help us review your inquiry more effectively."></textarea>
+                    </div>
+                    <div class="privacy-note">
+                        By submitting this form, you agree to share the information above for inquiry review and follow-up communication.
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text">Send Inquiry</span>
+                        </button>
+                        <p class="submit-help">This form sends directly to <strong>contact@ferdienervida.com</strong>.</p>
+                    </div>
+                    <div class="form-status" id="formStatus" aria-live="polite"></div>
+                </section>
+            </form>
+        </main>
+
+        <div id="successModal" class="modal" hidden>
+            <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+                <div class="modal-header">
+                    <div class="success-mark">✓</div>
+                    <h3 id="successTitle">Inquiry received</h3>
+                </div>
+                <p>Thank you for reaching out. Your inquiry has been received and will be reviewed before the appropriate next step is recommended.</p>
+                <button class="modal-close-btn" type="button" id="closeModalBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
