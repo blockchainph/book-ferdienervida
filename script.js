@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getSubmitLabel() {
         const selected = document.querySelector('input[name="service_type"]:checked')?.value || '';
-        return submitLabels[selected] || 'Send Inquiry';
+        return submitLabels[selected] || 'Send Request';
     }
 
     function updateVisibleSection() {
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (serviceGrid && !serviceGrid.querySelector('.field-error')) {
                     const error = document.createElement('p');
                     error.className = 'field-error';
-                    error.textContent = 'Please select the type of inquiry.';
+                    error.textContent = 'Please select the type of request.';
                     serviceGrid.appendChild(error);
                 }
                 return;
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.disabled = isSubmitting;
         submitBtn.classList.toggle('is-loading', isSubmitting);
         submitLabel.textContent = isSubmitting ? 'Sending...' : getSubmitLabel();
-        formStatus.textContent = isSubmitting ? 'Submitting your inquiry...' : '';
+        formStatus.textContent = isSubmitting ? 'Submitting your request...' : '';
     }
 
     function showSuccessModal() {
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
             formStatus.textContent = '';
             showSuccessModal();
         } catch (error) {
-            formStatus.textContent = 'There was a problem sending your inquiry. Please try again or email contact@ferdienervida.com directly.';
+            formStatus.textContent = 'There was a problem sending your request. Please try again or email contact@ferdienervida.com directly.';
         } finally {
             setSubmittingState(false);
         }
