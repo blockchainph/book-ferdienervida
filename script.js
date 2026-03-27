@@ -7,6 +7,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const formStatus = document.getElementById('formStatus');
     const modal = document.getElementById('successModal');
     const closeModalBtn = document.getElementById('closeModalBtn');
+    const submitLabel = submitBtn.querySelector('.btn-text');
+
+    const submitLabels = {
+        'Speaking Inquiry': 'Send Speaking Request',
+        'Training Inquiry': 'Send Training Request',
+        'Crypto Recovery Case Evaluation': 'Send Case Evaluation Request',
+        'Service Fit and Availability Inquiry': 'Send Service-Fit Inquiry'
+    };
+
+    function getSubmitLabel() {
+        const selected = document.querySelector('input[name="service_type"]:checked')?.value || '';
+        return submitLabels[selected] || 'Send Inquiry';
+    }
 
     function updateVisibleSection() {
         const selected = document.querySelector('input[name="service_type"]:checked')?.value || '';
@@ -23,6 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
         subjectField.value = selected
             ? `${selected} | Ferdie Nervida Inquiry`
             : 'New Inquiry for Ferdie Nervida';
+
+        submitLabel.textContent = getSubmitLabel();
     }
 
     function validateForm() {
@@ -77,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function setSubmittingState(isSubmitting) {
         submitBtn.disabled = isSubmitting;
         submitBtn.classList.toggle('is-loading', isSubmitting);
-        submitBtn.querySelector('.btn-text').textContent = isSubmitting ? 'Sending...' : 'Send Inquiry';
+        submitLabel.textContent = isSubmitting ? 'Sending...' : getSubmitLabel();
         formStatus.textContent = isSubmitting ? 'Submitting your inquiry...' : '';
     }
 
